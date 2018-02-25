@@ -1,0 +1,18 @@
+<header id="header">
+  <a [routerLink] = "['Home']"><img src="assets/images/efood.png" id="logo" class="img-responsive" alt="Cadena de Restaurantes DON QUIJOTE"></a>
+  <h1>{{titulo}}</h1>
+  <div class="clearfix"></div>
+</header>
+<nav class="navbar navbar-default navbar-fixed-top nav" role="navigation">
+  <div class="container">
+    <ul>
+      <li><a [routerLink] = "['Home']">Inicio</a></li>
+      <li><a [routerLink] = "['CrearRestaurante']">Crear Restaurante</a></li>
+      <li><a [routerLink] = "['DondeComoHoy', {random:'true'}]">A donde como hoy ?</a></li>
+    </ul>
+  </div>
+</nav>
+<section class="main">
+  <router-outlet></router-outlet>
+  <div class="clearfix"></div>
+</section>
